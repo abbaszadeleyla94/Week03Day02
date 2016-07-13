@@ -1,0 +1,85 @@
+----------------------------------------------------------1ci sualin cavabi:------------------------------------------
+
+1.brauserin standart stillerini resetlemek (Reset CSS)
+2.kodlari seliqeli ve qisa sekilde yazmaq meselen:
+
+  /*  bu sekilde yazmamaliyiq */
+{
+padding-right:10px;
+padding-left:5px;
+padding-top:10px;
+padding-bottom:5px;
+} 
+
+/*asagidaki sekilde yazilmalidi*/
+{
+padding: 10px 5px 10px 5px;               
+}
+
+3.klaslara ve identifikatorlara ad vererken diqtli olmaq lazimdir
+4. kodlara komment yazmaq lazimdir
+5.atributlari ve stilleri eyni setirde yazmaq lazimdir.Meselen:
+
+p {
+color: red;
+background: green;                 /*bu sekilde yox */
+font-size: 10px;
+}
+
+/*bu sekilde yazmaq lazimdi */
+p {color: red; background: green; font-size: 10px;}
+
+6.her hansi elementlere eyni parametrler verilibse onlari qruplasdirmaq lazimdir.meselen:
+h1 {
+font-family: Arial, Helvetica, sans-serif; color:red;
+}
+h2 {
+font-family: Arial, Helvetica, sans-serif; color:red;
+ }
+h3 {
+font-family: Arial, Helvetica, sans-serif; color:red;
+ }
+bu yazilisi bele yazmaliyiq:
+
+h1, h2, h3 { font-family: Arial, Helvetica, sans-serif; color:red  }
+
+7. margini sifirlamaq lazimdir  margin: 0 auto; 
+
+       ----------------------------------------------------       2 ci sual     -------------------------------------------
+sayt yaradan zaman hansisa ikon lazim olarsa onu yaratmaqcun vaxt cox gede biler bunagorede hazir ikonlardan 
+istifade olunur.Font awesome ikon fontudur.font awesome daxilinde hercur ikon tapmaq olar.font awesome 4.6.3  
+de 634 ikon var . sadece saytdan exe faylini yuklemekle butun fontlardan istifade etmek olar.
+Istifade qaydasi:
+1.arxiv faylini yuklemek
+2.font-awesome papkasini saytimin yerlesdiyi papkaya yerlesdirmek
+3.<head> tegimin icine linki yaziram  meselen:
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
+
+-----------------------------------------------------------------  3cu sual  ----------------------------------------------
+1.Anabelle Script
+2.Amydor
+3.American Captain
+4.Ambassadore
+5.Anglecia Pro Display
+6.Antithesis
+7.Antonio
+8.Aphrodite
+9.Arch
+10.Argo
+
+
+istifade qaydasi:
+1.arxiv faylini yuklemek
+2.daxilindeki fayli hazirladigimiz saytin papkasindaki fonts papkasina elave etmek
+3.daha sonra css faylini aciriq  orada
+ @font-face { 
+font-family: Argo;
+src: url(yerlesdiyi papkani yazmaq)
+}
+4.daha sonra harda mene o shrift lazimdirsa ora  bele yaziram:
+font-family: 'Argo',sans-serif,arial;
+5.veya
+ html,body{ font-family: 'Argo',sans-serif,arial; }
+
